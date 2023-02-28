@@ -1,0 +1,82 @@
+// Physical Sass Structure
+//  style.scss - This file. Should be linked or imported to all pages.
+//  _grid.scss - Define grids and default placements of grid items. This file isn't used for
+// other styling rules, so selectors may be duplicated elsewhere.
+//  _block.scss - Styles and layouts for top-level content blocks in the site-grid. Their SPECIFIC
+// children are also styled here.
+//  _altbg.scss - Alternate background colors on <section>.
+//  _var.scss - Font size, color, and spacing vars for use in other files.
+//  _typo.scss - Font and icon imports. (material-icons is currently linked in meta-and-includes.hbs).
+//  _break.scss - Defines breakpoints and media query mixins.
+//  _shadow.scss - box-shadow mixins: light(n), dark(n).
+//  _select.scss - Selector mixins.
+//  The rest of the files are styles for the components in their name.
+
+@use "grid";
+@use "typo";
+@use "block";
+@use "var";
+@use "altbg";
+@use "select";
+@use "contact";
+@use "break";
+
+@use "components/btn";
+@use "components/card";
+@use "components/form";
+@use "components/navbar";
+@use "components/gallery";
+@use "components/sidebar";
+@use "components/topbutton";
+@use "components/footer";
+@use "components/vhero";
+
+*:not(dd, dl, dt, summary, details) {
+  margin: 0;
+}
+
+:root {
+  font-size: 120%;
+
+  @include break.below(md) {
+    font-size: 80%;
+  }
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var.$bg-base;
+  color: var.$text-color-base;
+}
+
+.DEVSPACE {
+  height: 200vh;
+}
+
+header,
+section {
+  scroll-margin-top: var.$navbar-height + 4rem;
+  scroll-behavior: smooth;
+}
+
+@include select.headings() {
+  scroll-margin-top: var.$navbar-height + 4rem;
+  scroll-behavior: smooth;
+}
+
+span.fix {
+  background-color: black;
+  color: white;
+}
+
+.down200 {
+  display: inline-block;
+  margin-top: 200px;
+  padding: 2rem;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

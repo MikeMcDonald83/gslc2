@@ -1,0 +1,28 @@
+@use "../grid";
+@use "../var";
+
+.site-footer {
+  @extend %area-fb;
+  display: grid;
+  justify-items: center;
+  border-top: 1px solid gray;
+  font-size: 1.3rem;
+  background-color: var.$bg-base;
+
+  .social-icons {
+    display: flex;
+    gap: 2rem;
+    padding-block-start: 1.6rem;
+    align-items: center;
+
+    img {
+      width: 3rem;
+    }
+  }
+
+  copyright {
+    display: block;
+    padding-block: 1rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+}

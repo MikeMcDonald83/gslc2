@@ -1,0 +1,22 @@
+@use "../break";
+
+.top-button {
+  display: none;
+  position: fixed;
+  bottom: 4rem;
+  right: 2rem;
+  padding: 0.2rem;
+  background-color: ghostwhite;
+  border: 1px solid gray;
+  color: navy;
+  border-radius: 0.3rem;
+  z-index: 99;
+
+  span {
+    font-size: 4rem;
+  }
+
+  @include break.below(sm) {
+    display: block;
+  }
+}

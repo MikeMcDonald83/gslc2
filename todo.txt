@@ -1,0 +1,30 @@
+ABCDE = priorities
+W     = waiting on client
+P     = pushed to another phase
+
+(A) [] Main Landing @main
+(A) [] School landing hero image @school
+(A) [] Church landing @church
+(A) [] Add explanation to enrollment page @school
+(A) [] Ministries @church
+(A) [] Who we are @church
+(A) [] Sermons @church
+(A) [] Staff @church
+(A) [] Update navbar with site structure @main
+(B) [] Create flyer template @main
+(B) [] Refactory grid classes to contain default space @main
+(A) [] Reenable map
+(A) [] Change form submit to church's email
+(!!) [] Push design/tech demo here
+
+(W) [] Get staff and teacher bios @staff
+(W) [] Get staff and teacher images @staff
+(W) [] Which teachers for which grades @staff
+(W) [] Get program descriptions @programs
+(W) [] Get program sbs images @programs
+(W) [] Get even more facility images @school
+(W) [] Enrollment page @enroll
+(P) [] Online enrollment system @enroll
+(W) [] All dates and times @parents
+(W) [] Dress code @parents
+(P) [] Teacher comm portal

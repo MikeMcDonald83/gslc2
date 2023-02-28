@@ -1,0 +1,15 @@
+Sitemap. index.html only in every route.
+
+  webroot/
+      church/
+          about/
+          ministries/
+          sermons/
+          staff/
+      school/
+          enroll/
+          parents/
+          programs/
+          staff/
+      contact/
+

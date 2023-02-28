@@ -1,0 +1,64 @@
+@use "../var";
+@use "../grid";
+@use "../select";
+@use "../shadow";
+@use "../break";
+
+%sb-defaults {
+  height: fit-content;
+  @extend %area-sb;
+  position: fixed;
+  left: var.$sb-left;
+  width: var.$sb-item-width;
+  justify-self: start;
+  overflow-x: hidden;
+}
+
+nav.toc {
+  @extend %sb-defaults;
+  top: var.$navbar-height + 1rem;
+  border-radius: 0.2rem;
+
+  @include break.below(md) {
+    width: 90%;
+    max-width: 15rem;
+    position: static !important;
+    justify-self: center;
+    @include var.pad-main();
+  }
+
+  @include select.headings() {
+    font-size: 1em;
+    text-align: center;
+    margin-block-end: 0.8rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  &.btn-group {
+    gap: 2px;
+  }
+
+  .btn {
+    padding-inline: 1vw;
+  }
+}
+
+.flyer {
+  @extend %sb-defaults;
+  top: 55%;
+  display: flex;
+  max-height: 40vh;
+
+  @include break.below(md) {
+    display: none;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}

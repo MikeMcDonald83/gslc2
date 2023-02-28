@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Inserts main.ts (with style.scss) and ladder.ts-->
+  {{> meta-and-includes}}
+  <title>School</title>
+</head>
+
+{{> topbutton}}
+
+<body class="site-grid--no-sb">
+  {{> navbar}}
+
+  <!-- Main Content Here-->
+  <header class="hero--school-landing">
+    <h1>Good Shepherd School</h1>
+  </header>
+
+  <section class="content-auto">
+    <header>Welcome!</header>
+    <div class="card-container">
+
+      <div class="card">
+        <h1 class="card-title">Programs</h1>
+        <p class="card-text">Good Shepherd School is a private school with programs for children 3 to 11 years old. Find
+          out more!</p>
+        <div class="btn-group">
+          <a href="/school/programs/index.html#prek" class="btn">Pre-Kindergarten</a>
+          <a href="/school/programs/index.html#vpk" class="btn">Voluntary Pre-K</a>
+          <a href="/school/programs/index.html#k5" class="btn">Elementary, K-5</a>
+          <a href="/school/programs/index.html#aftercare" class="btn">Aftercare</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h1 class="card-title">For Parents</h1>
+        <p class="card-text">Quick info for parents.</p>
+        <div class="btn-group">
+          <a href="/school/parents/index.html#times" class="btn">Drop Off & Pick Up</a>
+          <a href="/school/parents/index.html#boys-uniform" class="btn">Dress Code</a>
+          <a href="/school/parents/index.html#parent-portal" class="btn">Parent Teacher Portal</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h1 class="card-title">Enrollment</h1>
+        <p class="card-text">Find out more about enrolling students. If you have any questions or
+          concerns, please call or write us. We can help you through the process.</p>
+        <div class="btn-group">
+          <a href="/school/enroll/index.html#forms" class="btn">Enrollment Forms</a>
+          <a href="/school/enroll/index.html#vpk-enroll" class="btn">Florida VPK Application</a>
+          <a href="/school/enroll/index.html#scholarships" class="btn">Scholarship Info</a>
+          <a href="/contact/index.html" class="btn">Contact Us</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h1 class="card-title">Teachers & Staff</h1>
+        <p class="card-text">Learn more about our teachers and staff.</p>
+        <div class="btn-group">
+          <a href="/school/staff/index.html#teachers" class="btn">Teachers</a>
+          <a href="/school/staff/index.html#staff" class="btn">Staff</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-auto">
+    <header>Our Campus</header>
+    <div class="gallery">
+      <figure class="gallery__imgbox">
+        <figcaption class="imgbox__caption"></figcaption>
+        <img src="/media/campus-gallery/campus-big-playground-900.webp" alt="" srcset="/media/campus-gallery/campus-big-playground-500.webp 500w,
+             /media/campus-gallery/campus-big-playground-700.webp 700w,
+             /media/campus-gallery/campus-big-playground-900.webp 900w,
+             /media/campus-gallery/campus-big-playground-1200.webp 1200w" sizes="(max-width: 576px) 500px,
+            (max-width: 768px) 700px,
+            (max-width: 992px) 900px,
+            1200px" class="imgbox__img">
+        <img src="/media/campus-gallery/campus-classroom-900.webp" alt="" srcset="/media/campus-gallery/campus-classroom-500.webp 500w,
+             /media/campus-gallery/campus-classroom-700.webp 700w,
+             /media/campus-gallery/campus-classroom-900.webp 900w,
+             /media/campus-gallery/campus-classroom-1200.webp 1200w" sizes="(max-width: 576px) 500px,
+            (max-width: 768px) 700px,
+            (max-width: 992px) 900px,
+            1200px" class="imgbox__img">
+        <img src="/media/campus-gallery/campus-school-front-900.webp" alt="" srcset="/media/campus-gallery/campus-school-front-500.webp 500w,
+             /media/campus-gallery/campus-school-front-700.webp 700w,
+             /media/campus-gallery/campus-school-front-900.webp 900w,
+             /media/campus-gallery/campus-school-front-1200.webp 1200w" sizes="(max-width: 576px) 500px,
+            (max-width: 768px) 700px,
+            (max-width: 992px) 900px,
+            1200px" class="imgbox__img">
+        <img src="/media/campus-gallery/campus-sign-900.webp" alt="" srcset="/media/campus-gallery/campus-sign-500.webp 500w,
+             /media/campus-gallery/campus-sign-700.webp 700w,
+             /media/campus-gallery/campus-sign-900.webp 900w,
+             /media/campus-gallery/campus-sign-1200.webp 1200w" sizes="(max-width: 576px) 500px,
+            (max-width: 768px) 700px,
+            (max-width: 992px) 900px,
+            1200px" class="imgbox__img">
+        <img src="/media/campus-gallery/campus-small-playground-900.webp" alt="" srcset="/media/campus-gallery/campus-small-playground-500.webp 500w,
+             /media/campus-gallery/campus-small-playground-700.webp 700w,
+             /media/campus-gallery/campus-small-playground-900.webp 900w,
+             /media/campus-gallery/campus-small-playground-1200.webp 1200w" sizes="(max-width: 576px) 500px,
+            (max-width: 768px) 700px,
+            (max-width: 992px) 900px,
+            1200px" class="imgbox__img">
+
+      </figure>
+
+      <div class="gallery__thumbs">
+        <img src="/media/campus-gallery/campus-big-playground_tn.webp" alt="Thumbnail for campus-big-playground."
+          class="thumbs__thumb">
+        <img src="/media/campus-gallery/campus-classroom_tn.webp" alt="Thumbnail for campus-classroom."
+          class="thumbs__thumb">
+        <img src="/media/campus-gallery/campus-school-front_tn.webp" alt="Thumbnail for campus-school-front."
+          class="thumbs__thumb">
+        <img src="/media/campus-gallery/campus-sign_tn.webp" alt="Thumbnail for campus-sign." class="thumbs__thumb">
+        <img src="/media/campus-gallery/campus-small-playground_tn.webp" alt="Thumbnail for campus-small-playground."
+          class="thumbs__thumb">
+
+      </div>
+    </div>
+  </section>
+
+  {{> footer}}
+</body>
+
+</html>

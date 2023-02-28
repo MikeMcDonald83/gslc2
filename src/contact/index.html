@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Inserts main.ts (with style.scss) and ladder.ts-->
+  {{> meta-and-includes}}
+  <title>Contact</title>
+</head>
+
+<body class="site-grid">
+  {{> navbar}}
+  {{> toc}}
+  {{> flyer}}
+
+  <!--Main Content Here-->
+  <section class="page-intro">
+    <header>Contact</header>
+  </section>
+
+  <section class="content-auto">
+    <div class="phone">
+      <h1 class="toc-target" id="phone">Phone</h1>
+      <div>
+        <h2>Church</h2>
+        <a class="btn" href="tel:850-932-3263">(850) 932-9127</a>
+      </div>
+      <div>
+        <h2>School</h2>
+        <a class="btn" href="tel:850-932-9127">(850) 932-9127</a>
+      </div>
+    </div>
+
+    <div class="office-hours">
+      <h1 class="toc-target" id="office-hours">Office Hours</h1>
+      <h2>Church</h2>
+      <p>8:00am - 4:00pm</p>
+      <p>Mondary - Friday</p>
+      <h2>School</h2>
+      <p>7:00am - 5:30pm</p>
+      <p>Mondary - Friday</p>
+    </div>
+
+    <div class="location">
+      <h1 id="address" class="toc-target">Address</h1>
+      <address>
+        4257 Gulf Breeze Pkwy<br>Gulf Breeze, FL 32563
+      </address>
+      <!-- <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13766.187353127521!2d-87.0455726!3d30.3922234!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x81daadf374b2d0a1!2sGood%20Shepherd%20Lutheran%20Church%20and%20School!5e0!3m2!1sen!2sus!4v1676725867074!5m2!1sen!2sus"
+        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+    </div>
+  </section>
+
+  <section class="content-auto">
+    <header id="email-us" class="toc-target">Email Us</header>
+    <form class="form-block" action="https://api.web3forms.com/submit" method="POST">
+
+      <input type="hidden" name="access_key" value="5c47b398-45d2-478c-b6c5-95cf776c6201">
+
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="7" required></textarea>
+
+
+      <fieldset>
+        <legend>Send To</legend>
+        <label for="to-church"><input type="radio" name="send-to" id="to-church">Church</label>
+        <label for="to-school"><input type="radio" name="send-to" id="to-school">School</label>
+      </fieldset>
+
+      <a type="submit" class="btn" onclick="this.closest('form').submit();return false;">Submit</a>
+
+    </form>
+  </section>
+
+  {{> footer}}
+</body>
+
+</html>

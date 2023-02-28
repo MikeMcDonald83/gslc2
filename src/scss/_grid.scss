@@ -1,0 +1,135 @@
+@use "var";
+@use "break";
+@use "select";
+
+// Two column grid for main page layout.
+// Give this class to body or a content wrapper.
+.site-grid {
+  display: grid;
+  grid-template-columns: [sb-start] var.$sb-width [sb-end main-start] var.$main-width [main-end];
+
+  @include break.below(md) {
+    grid-template-columns: [sb-start main-start] 1fr [sb-end main-end];
+  }
+
+  &--no-sb {
+    display: grid;
+    grid-template-columns: [sb-start main-start] 1fr [sb-end main-end];
+  }
+}
+
+// Placeholder classes for site-grid placement
+%area-sb {
+  grid-column: sb-start / sb-end;
+}
+%area-main {
+  grid-column: main-start / main-end;
+}
+%area-fb {
+  grid-column: sb-start / main-end;
+}
+
+// Utility classes for 12 column grids. 'rcol' classes are responsive.
+// They will expand to 12 columns when screen width goes below md.
+.col-3 {
+  grid-column-end: span 3;
+}
+.col-4 {
+  grid-column-end: span 4;
+}
+.col-6 {
+  grid-column-end: span 6;
+}
+.col-8 {
+  grid-column-end: span 8;
+}
+.col-9 {
+  grid-column-end: span 9;
+}
+.col-12 {
+  grid-column-end: span 12;
+}
+.rcol-3-12 {
+  grid-column-end: span 3;
+  @include break.below(md) {
+    grid-column-end: span 12;
+  }
+}
+.rcol-4-12 {
+  grid-column-end: span 4;
+  @include break.below(md) {
+    grid-column-end: span 12;
+  }
+}
+.rcol-6-12 {
+  grid-column-end: span 6;
+  @include break.below(md) {
+    grid-column-end: span 12;
+  }
+}
+.rcol-8-12 {
+  grid-column-end: span 8;
+  @include break.below(md) {
+    grid-column-end: span 12;
+  }
+}
+.rcol-9-12 {
+  grid-column-end: span 9;
+  @include break.below(md) {
+    grid-column-end: span 12;
+  }
+}
+// An article and a figure in the same row do not add up to 12 cols.
+// Use this helper on the first item to pad the start.
+.col-start-3 {
+  grid-column-start: 3;
+}
+
+.span-rows-2 {
+  grid-row-end: span 2;
+}
+
+// Placeholder for "content-auto" default placements.
+%grid-auto {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+  header {
+    @extend .col-12;
+  }
+  article,
+  article.md {
+    @extend .rcol-8-12;
+  }
+  & > figure,
+  & > figure.md {
+    @extend .rcol-4-12;
+  }
+  article.lg {
+    @extend .col-12;
+  }
+  figure.lg {
+    @extend .col-12;
+  }
+  .gallery {
+    @extend .col-12;
+  }
+  .card-container {
+    @extend .col-12;
+  }
+  .phone {
+    @extend .rcol-6-12;
+  }
+  .office-hours {
+    @extend .rcol-6-12;
+  }
+  .location {
+    @extend .col-12;
+  }
+  .form-block {
+    @extend .col-12;
+  }
+  .bigbtn {
+    @extend .rcol-6-12;
+  }
+}

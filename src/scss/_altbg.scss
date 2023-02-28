@@ -1,0 +1,14 @@
+@use "var";
+
+.site-grid,
+.site-grid--no-sb {
+  section:nth-of-type(3n + 1) {
+    background-color: var.$bg-1;
+  }
+  section:nth-of-type(3n + 2) {
+    background-color: var.$bg-2;
+  }
+  section:nth-of-type(3n + 3) {
+    background-color: var.$bg-3;
+  }
+}

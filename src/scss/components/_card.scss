@@ -1,0 +1,63 @@
+@use "../var";
+@use "../grid";
+@use "../shadow";
+@use "../select";
+@use "../break";
+
+.card-container {
+  display: grid;
+  gap: 1.5rem 1rem;
+  justify-self: stretch;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  overflow-x: hidden;
+
+  @include break.below(sm) {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    display: grid;
+    max-width: 400px;
+    width: 100%;
+    gap: var.$p-card-block;
+    grid-template-columns: 1fr;
+    background-color: white;
+    border-radius: 0.3rem;
+    justify-items: center;
+    align-items: start;
+    @include shadow.light(1);
+
+    > *:not(.card-figure) {
+      padding-inline: var.$p-card-inline;
+    }
+
+    > *:first-child:not(.card-figure) {
+      padding-block-start: var.$p-card-block;
+    }
+
+    > *:last-child:not(.card-figure) {
+      padding-block-end: var.$p-card-block;
+    }
+
+    .card-title {
+      text-align: center;
+      align-self: start;
+    }
+
+    .card-text {
+      text-align: justify;
+      hyphens: auto;
+      max-height: 11rem;
+      overflow-y: auto;
+    }
+
+    .btn-group {
+      align-self: end;
+      justify-self: stretch;
+      .btn {
+        flex: 1 1 100%;
+      }
+    }
+  }
+}

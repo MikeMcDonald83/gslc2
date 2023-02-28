@@ -1,0 +1,46 @@
+@use "../shadow";
+@use "../break";
+
+.form-block {
+  display: flex;
+  width: 70%;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  [type="text"],
+  [type="email"],
+  textarea {
+    width: 100%;
+  }
+
+  fieldset {
+    display: flex;
+    justify-content: space-evenly;
+    margin-block-start: 0.8rem;
+    width: 60%;
+    align-self: start;
+  }
+
+  label:not(fieldset label) {
+    padding: 0.3rem 0.3rem 0.3rem;
+    margin-block-start: 0.8rem;
+    align-self: start;
+  }
+
+  .btn {
+    margin-block-start: 0.8rem;
+    align-self: start;
+  }
+
+  [type="radio"] {
+    margin-inline-end: 0.7rem;
+  }
+
+  @include break.below(md) {
+    width: 95%;
+    fieldset {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+}
