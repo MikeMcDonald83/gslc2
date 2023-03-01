@@ -10,27 +10,32 @@
 <body class="site-grid">
   {{> navbar}}
   {{> toc}}
-  {{> flyer}}
+
 
   <!--Main Content Here-->
   <section class="content-auto">
     <header>Quick Info</header>
-    <div class="card-container">
-      <div id="times" class="card">
+    <div id="times" class="card-container toc-target" data-toc-text="Drop Off / Pick Up">
+      <div class="card">
         <h1 class="card-title">Drop Off & Pick Up</h1>
         <p class="card-text">Pre-K/VPK: 8am-1:30pm</p>
         <p class="card-text">Elementary: 8am-1:30pm</p>
         <p class="card-text">Aftercare: by 5pm</p>
       </div>
-      <div id="boys-uniform" class="card">
+      <div id="boys-uniform" class="card toc-target" data-toc-text="Boys Uniform">
         <h1 class="card-title">Boys Dress Code</h1>
         <p class="card-text">Shirts and Pants</p>
       </div>
-      <div id="girls-uniform" class="card">
+      <div id="girls-uniform" class="card toc-target" data-toc-text="Girls Uniform">
         <h1 class="card-title">Girls Dress Code</h1>
         <p class="card-text">Shirts and Pants</p>
       </div>
     </div>
+  </section>
+
+  <section class="content-auto">
+    <header class="toc-target" id="parent-portal">Parent Portal</header>
+    <article class="lg">This will be a link to the parent/teacher portal, should you decide to go that route.</article>
   </section>
 
   {{> footer}}

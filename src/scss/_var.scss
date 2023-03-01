@@ -25,8 +25,8 @@ $breakmap: (
 
 // Pastels
 $pastel-blue: rgb(222, 228, 243);
-$pastel-red: rgb(246, 233, 233);
-$pastel-green: rgb(230, 240, 218);
+$pastel-red: rgb(246, 214, 214);
+$pastel-green: rgb(236, 254, 236);
 
 $bg-1: $pastel-blue;
 $bg-2: $pastel-red;
@@ -35,12 +35,12 @@ $bg-3: $pastel-green;
 $bg-base: ghostwhite;
 
 $bg-title: gray;
-$bg-nav: rgb(80, 79, 104);
+$bg-nav: rgb(68, 52, 111);
 $bg-nav-hover: lighten($bg-nav, 10%);
 $bg-toc: ghostwhite;
 
-$text-color-base: rgb(75, 75, 75);
-$text-color-title: rgb(75, 75, 75);
+$text-color-base: rgb(100, 100, 100);
+$text-color-title: rgb(100, 100, 100);
 $text-color-nav: ghostwhite;
 
 $card-title-text: gray;

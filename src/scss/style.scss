@@ -67,16 +67,11 @@ section {
 span.fix {
   background-color: black;
   color: white;
+  @extend %area-main;
 }
 
 .down200 {
   display: inline-block;
   margin-top: 200px;
   padding: 2rem;
-}
-
-figure {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
 }

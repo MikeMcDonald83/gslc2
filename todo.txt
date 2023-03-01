@@ -1,18 +1,19 @@
 ABCDE = priorities
 W     = waiting on client
 P     = pushed to another phase
+?     = tbd
+!!    = milestone
 
-(A) [] Main Landing @main
-(A) [] School landing hero image @school
+(A) [x] Main Landing @main
+(A) [x] School landing hero image @school
 (A) [] Church landing @church
-(A) [] Add explanation to enrollment page @school
+(A) [x] Add explanation to enrollment page @school
 (A) [] Ministries @church
 (A) [] Who we are @church
 (A) [] Sermons @church
 (A) [] Staff @church
 (A) [] Update navbar with site structure @main
-(B) [] Create flyer template @main
-(B) [] Refactory grid classes to contain default space @main
+(B?) [] Refactor grid classes to contain default space @main
 (A) [] Reenable map
 (A) [] Change form submit to church's email
 (!!) [] Push design/tech demo here
@@ -28,3 +29,4 @@ P     = pushed to another phase
 (W) [] All dates and times @parents
 (W) [] Dress code @parents
 (P) [] Teacher comm portal
+(P) [] Create flyer template @main

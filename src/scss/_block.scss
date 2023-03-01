@@ -43,8 +43,8 @@
     hyphens: auto;
   }
 
-  figure {
-    max-height: 55vh;
+  > figure {
+    max-height: 60vh;
     img {
       height: 100%;
       width: 100%;
@@ -99,5 +99,13 @@
     @extend .hero;
     background-image: linear-gradient(#00000055, #00000055),
       url(/media/school-landing-title.webp);
+    background-position: 0 150%;
+  }
+
+  &--church-landing {
+    @extend .hero;
+    background-image: linear-gradient(#00000055, #00000055),
+      url(/media/school-landing-title.webp);
+    background-position: 0 150%;
   }
 }
