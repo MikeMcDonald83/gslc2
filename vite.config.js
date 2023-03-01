@@ -8,13 +8,14 @@ const outDir = resolve(__dirname, "dist");
 
 /** @type {import('vite').UserConfig} */
 export default {
-  base: "/gslc2/",
   root,
+  base: "/gslc2/",
   build: {
     outDir,
     rollupOptions: {
       input: {
         main: resolve(root, "index.html"),
+        contact: resolve(root, "contact/index.html"),
         school: resolve(root, "school/index.html"),
         enroll: resolve(root, "school/enroll/index.html"),
         programs: resolve(root, "school/programs/index.html"),
