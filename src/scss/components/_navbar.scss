@@ -155,6 +155,7 @@
 
     &.navbar-expand {
       grid-template-rows: var.$navbar-height auto;
+      background-color: var.$bg-nav !important;
     }
 
     .nav__link:hover {
